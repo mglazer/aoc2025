@@ -1,7 +1,3 @@
-import javax.naming.PartialResultException
-import kotlin.math.abs
-import kotlin.math.sign
-
 object Day1 {
 
     data class Move(val direction: Int, val distance: Int) {
@@ -50,7 +46,6 @@ object Day1 {
             else if (move.direction <0 && prevStart < start && prevStart != 0) zeroCounter++
             else if (move.direction >0 && prevStart > start && prevStart != 0) zeroCounter++
 
-            println("$move: prevStart: $prevStart, start: $start, zero: $zeroCounter")
         }
 
         return zeroCounter
@@ -69,13 +64,6 @@ object Day1 {
             R14
             L82
     """.trimIndent()
-
-//    val testInput = """
-//        L50
-//        R1
-//        L2
-//    """.trimIndent()
-
 
 }
 
